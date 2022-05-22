@@ -24,9 +24,9 @@ function App() {
                             <Route path="/" element={<Link to="/profile">Profile</Link>} />
                             <Route path="/profile" element={<Profile />} />
                             <Route path="/train" element={<Train />} />
+                            <Route path="/train/:id" element={<QuestionList />} />
                             <Route path="/login" element={<Login />} />
                             <Route path="/register" element={<Register />} />
-                            <Route path="/train/:id" element={<QuestionList />} />
                         </Routes>
                     </Col>
                 </Row>
