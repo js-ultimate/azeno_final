@@ -11,30 +11,16 @@ import useCookie from '../../hooks/useCookie';
 
 function App() {
     const [cookie, setCookie] = useCookie('token_auth');
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        if (cookie === undefined) {
-            navigate('/login');
-        }
-    }, []);
 
     return (
         <BrowserRouter>
             <Header />
             <Routes>
-                {cookie ? (
-                    <>
-                        <Route path="/" element={<Link to="/profile">Profile</Link>} />
-                        <Route path="/profile" element={<Profile />} />
-                        <Route path="/train" element={<Train />} />
-                    </>
-                ) : (
-                    <>
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/register" element={<Register />} />
-                    </>
-                )}
+                <Route path="/" element={<Link to="/profile">Profile</Link>} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/train" element={<Train />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
             </Routes>
         </BrowserRouter>
     );
