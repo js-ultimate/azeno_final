@@ -52,7 +52,7 @@
       "id": 3,
       "category": 1,
       "question": "Czy contextAPI służy do trzymania stanu w komponencie?",
-      "answer": "Do trzymania stanu komponentu używamy hooks lub this.state"
+      "answer": "Do trzymania stanu komponentu używamy hooks lub this.state Do trzymania stanu komponentu używamy hooks lub this.state Do trzymania stanu komponentu używamy hooks lub this.state Do trzymania stanu komponentu używamy hooks lub this.state Do trzymania stanu komponentu używamy hooks lub this.state Do trzymania stanu komponentu używamy hooks lub this.state"
     }
   ],
   "decks": [
