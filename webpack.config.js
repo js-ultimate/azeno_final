@@ -7,7 +7,8 @@ module.exports = {
         filename: 'index.bundle.js'
     },
     devServer: {
-        port: 3000
+        port: 3000,
+        historyApiFallback: true
     },
     module: {
         rules: [
